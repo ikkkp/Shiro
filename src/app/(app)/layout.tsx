@@ -43,7 +43,7 @@ export function generateViewport(): Viewport {
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const fetchedData = await fetchAggregationData()
-
+  console.log(fetchedData)
   const {
     seo,
     url,
