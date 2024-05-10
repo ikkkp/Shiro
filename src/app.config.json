@@ -74,8 +74,8 @@
       "scripts": []
     },
     "site": {
-      "favicon": "/innei.svg",
-      "faviconDark": "/innei-dark.svg"
+      "favicon": "/IK.png",
+      "faviconDark": "/IK.png"
     },
     "hero": {
       "title": {
