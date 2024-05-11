@@ -175,12 +175,36 @@ const Hero = () => {
               <SocialIcon id={'099566hk@gmail.com'} type={'mail'} />
             </BottomToUpTransitionView>
             <BottomToUpTransitionView
+              key={'x'}
+              delay={3 * 100 + titleAnimateD + 500} // 开始于动态元素之后
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'hungzln3'} type={'x'} />
+            </BottomToUpTransitionView>
+            <BottomToUpTransitionView
+              key={'rss'}
+              delay={3 * 100 + titleAnimateD + 500} // 开始于动态元素之后
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'https://blog.hzlssb.com/feed'} type={'rss'} />
+            </BottomToUpTransitionView>
+            <BottomToUpTransitionView
               key={'wechat'}
               delay={5 * 100 + titleAnimateD + 500} // 延迟递增
               className="inline-block"
               as="li"
             >
               <SocialIcon id={'_ikkkp'} type={'wechat'} />
+            </BottomToUpTransitionView>
+            <BottomToUpTransitionView
+              key={'qq'}
+              delay={6 * 100 + titleAnimateD + 500} // 延迟递增
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'2496450092'} type={'qq'} />
             </BottomToUpTransitionView>
           </ul>
         </>
@@ -211,7 +235,7 @@ const Hero = () => {
           )}
         >
           <small className="text-center">
-            当第一颗卫星飞向大气层外，我们便以为自己终有一日会征服宇宙。
+            个人只拥有此生此世是不够的，他还应该拥有诗意的世界。
           </small>
           <span className="mt-8 animate-bounce">
             <i className="icon-[mingcute--right-line] rotate-90 text-2xl" />
