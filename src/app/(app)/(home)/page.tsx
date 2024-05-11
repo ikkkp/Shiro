@@ -176,7 +176,7 @@ const Hero = () => {
             </BottomToUpTransitionView>
             <BottomToUpTransitionView
               key={'x'}
-              delay={3 * 100 + titleAnimateD + 500} // 开始于动态元素之后
+              delay={5 * 100 + titleAnimateD + 500} // 开始于动态元素之后
               className="inline-block"
               as="li"
             >
@@ -184,23 +184,15 @@ const Hero = () => {
             </BottomToUpTransitionView>
             <BottomToUpTransitionView
               key={'rss'}
-              delay={3 * 100 + titleAnimateD + 500} // 开始于动态元素之后
+              delay={6 * 100 + titleAnimateD + 500} // 开始于动态元素之后
               className="inline-block"
               as="li"
             >
               <SocialIcon id={'https://blog.hzlssb.com/feed'} type={'rss'} />
             </BottomToUpTransitionView>
             <BottomToUpTransitionView
-              key={'wechat'}
-              delay={5 * 100 + titleAnimateD + 500} // 延迟递增
-              className="inline-block"
-              as="li"
-            >
-              <SocialIcon id={'_ikkkp'} type={'wechat'} />
-            </BottomToUpTransitionView>
-            <BottomToUpTransitionView
               key={'qq'}
-              delay={6 * 100 + titleAnimateD + 500} // 延迟递增
+              delay={8 * 100 + titleAnimateD + 500} // 延迟递增
               className="inline-block"
               as="li"
             >
