@@ -1,0 +1,32 @@
+/* Keyframes for ripple effect */
+@keyframes ripple-effect {
+    from {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  /* Container styling with animation */
+  .ripple-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%; /* Ensure the ripple is circular */
+  }
+  
+  .ripple-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #800080 10%, transparent 40%);
+    border-radius: 50%;
+    animation: ripple-effect 2s infinite ease-out;
+  }
+  

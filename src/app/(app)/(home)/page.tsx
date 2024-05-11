@@ -39,6 +39,8 @@ import {
 import { ActivityPostList } from './components/ActivityPostList'
 import { ActivityRecent } from './components/ActivityRecent'
 
+import '~/styles/ripple.css'
+
 export default function Home() {
   return (
     <div>
@@ -210,14 +212,19 @@ const Hero = () => {
         </>
 
         <div
-          className={clsx('lg:size-[300px]', 'size-[200px]', 'mt-24 lg:mt-0')}
+          className={clsx(
+            'ripple-container',
+            'lg:size-[300px]',
+            'size-[200px]',
+            'mt-24 lg:mt-0',
+          )}
         >
-          <Image
+          <img
             height={300}
             width={300}
-            src={avatar!}
+            src={avatar}
             alt="Site Owner Avatar"
-            className={clsxm(
+            className={clsx(
               'aspect-square rounded-full border border-slate-200 dark:border-neutral-800',
               'w-full',
             )}
