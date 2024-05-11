@@ -191,8 +191,16 @@ const Hero = () => {
               <SocialIcon id={'https://blog.hzlssb.com/feed'} type={'rss'} />
             </BottomToUpTransitionView>
             <BottomToUpTransitionView
-              key={'qq'}
+              key={'wechat'}
               delay={8 * 100 + titleAnimateD + 500} // 延迟递增
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'weixin://dl/chat?_ikkkp'} type={'wechat'} />
+            </BottomToUpTransitionView>
+            <BottomToUpTransitionView
+              key={'qq'}
+              delay={9 * 100 + titleAnimateD + 500} // 延迟递增
               className="inline-block"
               as="li"
             >
