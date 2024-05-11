@@ -158,6 +158,30 @@ const Hero = () => {
                 )
               },
             )}
+            <BottomToUpTransitionView
+              key={'twitter'}
+              delay={3 * 100 + titleAnimateD + 500} // 开始于动态元素之后
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'hungzln3'} type={'twitter'} />
+            </BottomToUpTransitionView>
+            <BottomToUpTransitionView
+              key={'mail'}
+              delay={4 * 100 + titleAnimateD + 500} // 延迟递增
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'099566hk@gmail.com'} type={'mail'} />
+            </BottomToUpTransitionView>
+            <BottomToUpTransitionView
+              key={'wechat'}
+              delay={5 * 100 + titleAnimateD + 500} // 延迟递增
+              className="inline-block"
+              as="li"
+            >
+              <SocialIcon id={'_ikkkp'} type={'wechat'} />
+            </BottomToUpTransitionView>
           </ul>
         </>
 
