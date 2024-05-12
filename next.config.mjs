@@ -70,11 +70,17 @@ let nextConfig = {
   },
 
   webpack: (config, { webpack }) => {
+    
     const __dirname = new URL('./', import.meta.url).pathname
+
+    //linux
     config.resolve.alias['jotai'] = path.resolve(
       __dirname,
       'node_modules/jotai',
     )
+
+    //windows
+    // config.resolve.alias['jotai'] = path.resolve('node_modules/jotai');
 
     config.externals.push({
       'utf-8-validate': 'commonjs utf-8-validate',
